@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/bookNameinOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderSummary"
+        android:layout_marginLeft="10dp"
+        android:text="Book Name"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderSummary"
+        android:layout_toRightOf="@+id/bookNameinOrderSummary"
+        android:text="x"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:ignore="UnknownIdInLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hasTopping"
+        android:textStyle="italic"
+
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/bookNameinOrderSummary"
+        android:text="has old"/>
+
+    <TextView
+        android:id="@+id/hasCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookNameinOrderSummary"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/hasTopping"
+        android:text="has new"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/priceinOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="$10" />
+
+
+
+</RelativeLayout>
